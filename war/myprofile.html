@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Spotbook</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/my-style-2.css">
+<link rel="stylesheet" href="css/my-style-3.css">
+
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+<link href='css/google-font.css' rel='stylesheet' type='text/css'>
+
+<link
+	href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css"
+	rel="stylesheet" media="screen">
+<link rel="stylesheet" href="css/fakeLoader.css">
+<script>
+$(document).ready(function(){
+	
+		
+	$( ".thumbnail" ).each(function(index) {
+	    $(this).on("click", function(){
+	    	$("#newSpace").load("Details.html");
+	    });
+	});
+	
+	
+});
+
+</script>
+
+</head>
+<body style="">
+
+	<div id="fakeLoader"></div>
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Spotbook</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse"
+				id="bs-example-navbar-collapse-1">
+
+
+				<ul class="nav navbar-nav navbar-right">
+
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown" role="button" aria-expanded="false">Charan
+							<span class="caret"></span>
+					</a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+						</ul></li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+
+	<div class="rows" style="margin-top: 60px;">
+
+		<div class="col-md-12">
+
+			<div class="input-group">
+				<input type="text" class="form-control" placeholder="Search for...">
+				<span class="input-group-btn">
+					<button class="btn btn-default" type="button">Go!</button>
+				</span>
+			</div>
+
+
+		</div>
+
+	</div>
+
+	<div class="rows" style="margin-top: 58px;">
+		<div class="col-md-8">
+			<div id="newSpace" class="rows">
+				<div class="col-md-12">
+
+					<!-- /input-group -->
+
+					<div class="panel panel-default" style="margin-top: 10px;">
+						<div class="panel-heading">Featured Spots</div>
+						<div class="panel-body">
+
+
+							<div class="row">
+								<div class="col-md-3">
+									<div class="thumbnail">
+										<img src="img/volley.jpg" alt="...">
+										<div class="caption">
+											<h4>Volleyball @Sivaji Nagar</h4>
+										</div>
+									</div>
+
+
+								</div>
+
+								<div class="col-md-3">
+									<div class="thumbnail">
+										<img src="img/football.jpg" alt="...">
+										<div class="caption">
+											<h4>Football @Yelahanka</h4>
+
+										</div>
+									</div>
+
+
+								</div>
+
+								<div class="col-md-3">
+									<div class="thumbnail">
+										<img src="img/swim.jpg" alt="...">
+										<div class="caption">
+											<h4>Swimming @Hebbal</h4>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-3">
+									<div class="thumbnail">
+										<img src="img/badmin.jpg" alt="...">
+										<div class="caption">
+											<h4>Badminton @Electronic City</h4>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default" style="margin-top: 10px;">
+						<div class="panel-heading">Discounts</div>
+						<div class="panel-body">
+							<div class="row">
+
+								<div class="col-md-3">
+									<div class="thumbnail">
+										<img src="img/swim.jpg" alt="...">
+										<div class="caption">
+											<h4>Swimming @Hebbal</h4>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-3">
+									<div class="thumbnail">
+										<img src="img/football.jpg" alt="...">
+										<div class="caption">
+											<h4>Football @Yelahanka</h4>
+
+										</div>
+									</div>
+
+
+								</div>
+
+								<div class="col-md-3">
+									<div class="thumbnail">
+										<img src="img/volley.jpg" alt="...">
+										<div class="caption">
+											<h4>Volleyball @Sivaji Nagar</h4>
+										</div>
+									</div>
+
+
+								</div>
+
+								<div class="col-md-3">
+									<div class="thumbnail">
+										<img src="img/badmin.jpg" alt="...">
+										<div class="caption">
+											<h4>Badminton @Electronic City</h4>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+
+			<div class="panel panel-default" style="margin-top: 10px;">
+				<div class="panel-heading">Recent Activity</div>
+				<div class="panel-body">
+
+					<div class="panel panel-default event">
+						<div class="panel-body">
+							<div class="rsvp col-md-4">
+								<i>18</i> <i>nov</i>
+
+							</div>
+							<div class="info col-sm-7 hidden-xs">Badminton @ Whitefield</div>
+
+						</div>
+					</div>
+
+
+					<div class="panel panel-default event">
+						<div class="panel-body">
+							<div class="rsvp col-md-4 col-sm-2">
+								<i>1</i> <i>nov</i>
+
+							</div>
+							<div class="info col-sm-7 hidden-xs">Badminton @ Whitefield</div>
+
+						</div>
+					</div>
+
+
+
+					<div class="panel panel-default event">
+						<div class="panel-body">
+							<div class="rsvp col-md-4 col-sm-2">
+								<i>26</i> <i>oct</i>
+
+							</div>
+							<div class="info col-sm-7 hidden-xs">Badminton @ Whitefield</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+
+
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script-2.js"></script>
+	<script src="js/fakeLoader.min.js"></script>
+
+	<script>
+		$(document).ready(function() {
+			$("#fakeloader").fakeLoader({
+				timeToHide : 2000,
+				bgColor : "#3498db",
+				spinner : "spinner1"
+			});
+
+		});
+	</script>
+
+</body>
+</html>
